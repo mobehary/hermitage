@@ -1,0 +1,2352 @@
+$primary_color: #043361;
+$secondary_color: #4DBBAB;
+$light_primary_color: #2F89FC;
+$consultation-height: 235px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+}
+
+#preloader{
+    background: #000 url(../image/preload.gif) no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.disappear{
+    animation: vanish 2s forwards;
+}
+@keyframes vanish{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+section{
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ababab;
+    background-color: #dedede;
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: $primary_color;
+  }
+
+  ::-webkit-scrollbar-thumb:hover{
+    background: $secondary_color;
+  }
+
+#scroll-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: $primary_color;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    &:hover{
+        background-color: $secondary_color;
+        transition: all 0.3s;
+    }
+  }
+
+header{
+    .upper-nav{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        opacity: 0.7;
+        background-color:#FAFAFA;
+        color: #656565;
+        font-size: 14px !important;
+        i{
+            margin-right: 20px;
+        }
+    }
+    .lower-nav{
+        padding: 10px 0px;
+        ul{
+            li{
+                margin-right: 30px;
+                a{
+                    color: #343434 !important;
+                    font-size: 16px;
+                    &:hover{
+                        color: $secondary_color !important;
+                    }
+                }
+            }
+        }
+}
+
+.home-header{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+    .hero-box{
+        margin-top: 150px;
+        h1{
+        color: $primary_color;
+        font-size: 65px;
+        font-weight: bolder;
+        }
+        span{
+            color: black;
+            font-size: 45px;
+            font-weight: bolder;
+        }
+        h4{
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    }
+    .special-btn{
+        background-color: $secondary_color;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 20px;
+        color: #FFF;
+        transition: all 0.3s;
+        &:hover{
+            text-decoration: none;
+            color: #FFF;
+            background-color: $primary_color;
+            transition: all 0.3s;
+        }
+        &:active{
+            text-decoration: none;
+            color: #FFF;
+            background-color: $primary_color;
+        }
+        &:visited{
+            text-decoration: none;
+            color: #FFF;
+        }
+    }
+}
+.features{
+    margin-top: -50px;
+    p{
+        color:#FFFFFF;
+        letter-spacing: 2px;
+    }
+    .card{
+        padding: 40px 20px 60px 20px;
+        border-radius: 0px;
+        border: none;
+        
+    }
+    .od-section{
+            padding-right: 0px;
+            padding-left: 0px;
+        .card{
+            background-color: $secondary_color;
+        }
+    }
+    .ev-section{
+            padding-right: 0px;
+            padding-left: 0px;
+        .card{
+            background-color: #5B9989;
+        }
+    }
+    h2{
+        i{
+            font-size: 45px;
+            color: $primary_color;
+        }
+    }
+    h4{
+        color: $primary_color;
+    }
+}
+.about-us{
+    padding-top: 50px;
+    .doc-image{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .doc-desc{
+        padding: 30px 60px;
+        line-height: 40px;
+        h6{
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            color: $primary_color;
+        }
+        h3{
+            margin-bottom: 50px;
+            color: $secondary_color;
+        }
+    }
+
+    .feature-list{
+        i{
+            color: #043361;
+            /* font-size: 35px; */
+            border: 1px solid #043361;
+            /* padding: 15px; */
+            height: 55px;
+            margin: 30px 20px 30px 0px;
+            width: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        
+        h5{
+            margin-top: 30px;
+            font-size: 18px;
+            color: $primary_color;
+        }
+        p{
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+}
+.departments{
+    .doc-image{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .doc-desc{
+        padding: 30px 60px;
+        line-height: 30px;
+        h6{
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        h3{
+            margin-bottom: 50px;
+        }
+    }
+
+    .feature-list{
+        i{
+            color: #FFF;
+            background-color: $primary_color;
+            font-size: 35px;
+            border: 1px solid $primary_color;
+            padding: 15px;
+            margin: 30px 20px 30px 0px;
+        }
+        h5{
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+}
+
+.consultation{
+    background-image: url(../image/Digital-banners-Coronavirus-Virus-cell-1200x500-tinted_tcm18-72639_w1200_n.png),linear-gradient(rgba(77,181,171,0.7),rgba(77,181,171,0.7));
+    background-blend-mode: overlay;
+    height: $consultation-height;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: $consultation-height/3;
+    h3{
+        color: #FFF;
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+    p{
+        color: #FFF;
+        letter-spacing: 1px;
+    }
+    .special-btn{
+        background-color: $secondary_color;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 20px;
+        margin-top: $consultation-height/3;
+        color: #FFF;
+        transition: all 0.5s;
+        &:hover{
+            text-decoration: none;
+            color: #FFF;
+            background-color: $primary_color;
+            transition: all 0.5s;
+        }
+        &:active{
+            text-decoration: none;
+            color: #FFF;
+            background-color: $primary_color;
+        }
+        &:visited{
+            text-decoration: none;
+            color: #FFF;
+        }
+    }
+}
+.page-desc{
+    background-image: url(../image/blog3.jpg),linear-gradient(rgba(77,181,171,0.6),rgba(77,181,171,0.6));
+    background-blend-mode: overlay;
+    height: $consultation-height;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: $consultation-height/3;
+    h3{
+        color: #FFF;
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+    p{
+        color: #FFF;
+        letter-spacing: 1px;
+    }
+    .special-btn{
+        background-color: $secondary_color;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 20px;
+        margin-top: $consultation-height/3;
+        color: #FFF;
+        &:hover{
+            text-decoration: none;
+            color: #FFF;
+            background-color: $primary_color;
+        }
+        &:active{
+            text-decoration: none;
+            color: #FFF;
+            background-color: $primary_color;
+        }
+        &:visited{
+            text-decoration: none;
+            color: #FFF;
+        }
+    }
+}
+
+.departments{
+    padding: 50px 40px;
+    background-color: #fefefe;
+    .desc-paragraph{
+        color: #555;
+        letter-spacing: 1px;
+        padding: 15px 150px
+    }
+    h3{
+        color: $secondary_color;
+        font-size: 40px;
+    }
+    h5{
+        color: $primary_color;
+    }
+    .tabs{
+        ul{
+            justify-content: center;
+            margin: 20px auto;
+            li{
+                button{
+                    color: $secondary_color;
+                    font-size: 20px;
+                }
+                
+                .active{
+                    background-color: $primary_color;
+                }
+            }
+        }
+    }
+}
+
+
+.doctors{
+    padding: 50px 40px;
+    background-color: #fefefe;
+    .desc-paragraph{
+        color: #555;
+        letter-spacing: 1px;
+        padding: 15px 150px
+    }
+    h3{
+        color: $secondary_color;
+        font-size: 40px;
+    }
+    h5{
+        color: $primary_color;
+    }
+    .doctor{
+        .card{
+            border: 0px;
+            border-radius: 10px;
+            position: relative;
+            &:hover{
+                .social-links{
+                    display: block;
+                    background-color: $secondary_color;
+                    transition: all 0.8s;
+                    ul{
+                        li{
+                            a{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            img{
+                border-radius: 10px;
+            }
+            h5{
+                color: $secondary_color;
+            }
+            h6{
+                color: #555555;
+                letter-spacing: 3px;
+                font-size: 14px;
+            }
+            .social-links{
+                position: absolute;
+                top: 292px;
+                border-radius: 0px 0px 10px 10px;
+                width: 100%;
+                background-color: transparent;
+                transition: all 0.3s;
+                ul{
+                    display: flex;
+                    justify-content: space-around;
+                    li{
+                        a{
+                            color: transparent;
+                            transition: all 0.5s;
+                            i{
+                                font-size: 18px;
+                            }
+                            &:hover{
+                                transition: all 0.5s;
+                                color: $primary_color;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .small-doctors{
+        display: none;
+    }
+}
+
+
+.testimonials{
+    padding: 80px;
+    background-color: #EFEFEF;
+    h5{
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: $secondary_color;
+    }
+    h6{
+        color: $primary_color;
+        font-size: 16px;
+    }
+    .desc-paragraph{
+        color: #555;
+        letter-spacing: 1px;
+        padding: 15px 150px;
+    }
+    img{
+        border-radius: 10px;
+    }
+    h1{
+        color: $primary_color;
+        i{
+            font-size: 30px;
+        }
+    }
+    .carousel-item{
+        p{
+            letter-spacing: 1px;
+            color: #6A6A6A;
+        }
+        h5{
+            color: $primary_color;
+            font-size: 22px;
+        }
+        h6{
+            color: $secondary_color;
+            font-size: 18px;
+        }
+    }
+
+}
+.carousel-indicators{
+    position: absolute;
+    top: 210px;
+    li{
+        background-color: $primary_color;
+    }
+}
+.contact-us{
+    .contact-form{
+        background-color: $primary_color;
+        padding: 60px 20px;
+    }
+    h6{
+        color: #C1DCFE;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    h3{
+        color: #FFF;
+        letter-spacing: 2px;
+        font-weight: bolder;
+        font-size: 40px;
+    }
+    p{
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: #EBF3FF;
+    }
+    .a-h{
+        margin-top: 40px;
+    }
+    form{
+        input{
+            background-color: $primary_color;
+            color: #FFFFFF;
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            outline-style: none;
+            &::placeholder{
+                color: #AFAFAF;
+            }
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid #bbb;
+        }
+        select{
+            background-color: $primary_color;
+            color: #FFFFFF;
+            width: 100%;
+            margin-top: 15px;
+            outline-style: none;
+            margin-bottom: 15px;
+            &::placeholder{
+                color: #AFAFAF;
+            }
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid #bbb;
+        }
+        textarea{
+            background-color: $primary_color;
+            padding: 10px;
+            color: #FFFFFF;
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            outline-style: none;
+            &::placeholder{
+                color: #AFAFAF;
+            }
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid #bbb;
+        }
+        .submit-btn{
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            color: #FFF;
+            background-color: $secondary_color;
+            width: 100%;
+            margin-top: 25px;
+        }
+    }
+    .facts-card{
+        border: none;
+        background-color: #F7F7F7;
+        padding: 25px;
+        margin: 12px;
+        .counter{
+            font-weight: bold;
+            color: $secondary_color;
+            font-size: 30px;
+        }
+        h5{
+            font-size: 18px;
+        }
+    }
+}
+
+
+.pricing{
+    padding: 80px 80px 150px 80px;
+    background-color: #EFEFEF;
+    h5{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    h3{
+        color: $secondary_color;
+        font-size: 40px;
+    }
+    .desc-paragraph{
+        color: #555;
+        letter-spacing: 1px;
+        padding: 15px 150px
+    }
+    .plan-card{
+        position: relative;
+        padding: 30px 15px;
+        border: 2px solid $primary_color;
+        ul{
+            li{
+                color: #656565;
+                margin: 35px auto;
+            }
+        }
+        h3{
+            font-size: 35px;
+            font-weight: bold;
+            color: $primary_color;
+            span{
+                font-size: 12px;
+                color: #6A6A6A;
+                font-weight: lighter;
+            }
+        }
+        &:hover{
+            border: 2px solid $secondary_color;
+            text-decoration: none;
+            transition: all 0.3s;
+            .get-offer{
+                background-color: $secondary_color;
+                text-decoration: none;
+                transition: all 0.3s;
+            }
+            h3{
+                color: $secondary_color;
+                transition: all 0.3s;
+            }
+        }
+        .get-offer{
+            position: absolute;
+            top: 465px;
+            left: 20%;
+            margin: auto;
+            background-color: $primary_color;
+            color: #FFF;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            width: 60%;
+        }
+    }
+}
+
+.blog{
+    padding: 0px 80px 150px;
+    background-color: #EFEFEF;
+    h5{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    h3{
+        color: $secondary_color;
+        font-size: 40px;
+    }
+    .desc-paragraph{
+        color: #555;
+        letter-spacing: 1px;
+        padding: 15px 150px
+    }
+    .card-header{
+        padding: 0px;
+    }
+    .card-body{
+        a{
+            color: #000;
+            font-size: 20px;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        p{
+            color: #656565;
+            letter-spacing: 1px;
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .read-more{
+            background-color: $secondary_color;
+            color: #FFF;
+            border-radius: 50px;
+            padding: 5px 20px;
+            font-size: 15px;
+            border: 1px solid $secondary_color;
+            transition: all 0.3s;
+            &:hover{
+                border: 1px solid $primary_color;
+                color: $primary_color;
+                background-color: #FFF;
+
+                transition: all 0.3s;
+            }
+        }
+        i{
+            font-size: 12px;
+        }
+        .author{
+            color: $primary_color;
+            font-size: 16px;
+            float: right;
+            &:hover{
+                text-decoration: none;
+                color: $secondary_color;
+            }
+        }
+        span{
+            color: $primary_color;
+            float: right;
+            margin-right: 15px;
+        }
+    }
+    .pagination{
+        margin-top: 65px;
+        ul{
+            a{
+                margin-right: 10px;
+                border: 1px solid $primary_color;
+                padding: 3px 12px;
+                border-radius: 5px;
+                color: $primary_color;
+            }
+            .active{
+                background-color: $primary_color;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.contact-box{
+    background-color: #efefef;
+    height: 120px;
+    span{
+        font-size: 16px;
+        color: #141313;
+        font-weight: bolder;
+    }
+    p{
+        font-size: 13px;
+        color: #666;
+    }
+}
+
+.footer{
+    background-color: #141313;
+    padding-top: 80px;
+    h2
+    {
+        color: $secondary_color;
+        font-size: 24px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        span{
+            font-size: 24px;
+            color: $light_primary_color;
+            font-weight: bolder;
+            letter-spacing: 1px;
+        }
+    }
+    p{
+        color: #bbb;
+        letter-spacing: 1px;
+    }
+    .location-details{
+        li{
+            color: #eeeeee;
+        }
+        li:first-child{
+            color: #999999;
+        }
+    }
+    .social-ico{
+        list-style-type: none;
+        li{
+            margin-right: 50px;
+            display: inline;
+            a{
+               color: #eeeeee;
+               transition: all 0.3s;
+                i{
+                    font-size: 28px;
+                }
+                &:hover{
+                    transition: all 0.3s;
+                    color: $secondary_color;
+                }
+            }
+        }
+    }
+    .second-col{
+        a{
+            color: #cdcdcd;
+            transition: all 0.5s;
+           li{
+                i{
+                    font-size: 12px;
+                }
+            } 
+            &:hover{
+                transition: all 0.3s;
+                text-decoration: none;
+                color: $secondary_color;
+            }
+        }
+        
+    }
+    .third-col{
+        a{
+            color: #A4A4A4;
+            transition: all 0.3s;
+            &:hover{
+                color: $secondary_color;
+                transition: all 0.3s;
+                text-decoration: none;
+            }
+        }
+    }
+    .submit-form{
+        input{
+            border-radius: 0px;
+            outline-style: none;
+            &::placeholder{
+                text-align: center;
+                color: $primary_color;
+            }
+        }
+        button{
+            border-radius: 0px;
+            outline-style: none;
+            background-color: $secondary_color;
+            border: 1px solid $secondary_color;
+            &:hover{
+                background-color: $primary_color;
+                border: 1px solid $primary_color;
+            }
+        }
+    }
+}
+
+.login{
+    padding: 50px 0px;
+    h2{
+        color: $secondary_color;
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
+    a{
+        color: #000;
+    }
+    .login-form{
+        input{
+            outline-style: none;
+            &:first-child{
+                margin-bottom: 20px;
+            }
+        }
+        a{
+            font-size: 12px;
+            color: #323232;
+        }
+        button{
+            border: none;
+            float: right;
+            margin-top: 20px;
+            padding: 5px 30px;
+            background-color: $secondary_color;
+            color: #fff;
+            border-radius: 50px;
+        }
+        h6{
+            margin-top: 60px;
+            color: $primary_color;
+            font-size: 14px;
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+    .register-form{
+        input{
+            outline-style: none;
+            margin-bottom: 20px;
+        }
+        a{
+            font-size: 12px;
+            color: #323232;
+        }
+        button{
+            border: none;
+            float: right;
+            margin-top: 20px;
+            padding: 5px 30px;
+            background-color: $secondary_color;
+            color: #fff;
+            border-radius: 50px;
+        }
+        h6{
+            margin-top: 60px;
+            color: $primary_color;
+            font-size: 14px;
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+    
+}
+
+
+footer{
+    background-color: #141313;
+    color: #A4A4A4;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    h2{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 376px){
+    header{
+        .upper-nav{
+            img{
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 10px;
+            }
+            span{
+                font-size: 12px;
+            }
+        }
+      .special-btn{
+        padding: 5px 15px;
+        font-size: 14px;
+        border-radius: 20px;
+        color: #FFF;
+        }
+        .hero-box{
+            margin-top: 150px;
+            h1{
+            color: $primary_color;
+            font-size: 40px;
+            font-weight: bolder;
+            }
+            span{
+                color: black;
+                font-size: 25px;
+                font-weight: bolder;
+            }
+            h4{
+                font-size: 15px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .features{
+        margin-top: -50px;
+        p{
+            color:#FFFFFF;
+            letter-spacing: 2px;
+        }
+        .card{
+            padding: 20px;
+            border-radius: 0px;
+            border: none;
+            
+        }
+        .od-section{
+            h4{
+                font-size: 18px;
+            }
+            p{
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
+        }
+        .ev-section{
+            h4{
+                font-size: 18px;
+            }
+            p{
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
+        }
+        h2{
+            i{
+                font-size: 45px;
+                color: $primary_color;
+            }
+        }
+        h4{
+            color: $primary_color;
+        }
+    }
+    .about-us{
+        text-align: center;
+        .doc-image{
+            display: none;
+        }
+        .doc-desc{
+            h6{
+            margin-bottom: 15px;
+            font-size: 11px;
+            }
+            h3{
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 10px;
+                line-height: 15px;
+            }
+            .feature-list{
+                i{
+                    margin: 0px;
+                }
+                h5{
+                    margin-top: 20px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .consultation{
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 13px;
+            margin-bottom: 0px;
+        }
+        .special-btn-cols{
+            text-align: center;
+        }
+        .special-btn{
+            padding: 7px 14px;
+            font-size: 13px;
+        }
+    }
+
+    .departments{
+        h5{
+            font-size: 14px;
+        }
+        h3{
+            font-size: 22px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .desc-paragraph{
+            padding: 0px;
+        }
+        .tabs{
+            ul{
+                li{
+                    button{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .doc-desc{
+            text-align: center;
+            padding: 0px;
+            h3{
+                margin-bottom: 15px;
+            }
+            p{
+                text-align: left;
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .feature-list{
+                i{
+                    margin: 5px;
+                    font-size: 25px;
+                    padding: 10px;
+                }
+                h5{
+                    margin-top: 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+        .doc-image{
+                display: none;
+        }
+    }
+
+
+    .doctors{
+        padding: 0px;
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .desc-paragraph{
+            font-size: 12px;
+            padding: 0px;
+        }
+        .large-doctors{
+            display: none;
+        }
+        .small-doctors{
+            .doc-sm-desc{
+                text-align: left;
+                h5{
+                    font-size: 12px;
+                    color: $secondary_color;
+                }
+                h6{
+                    color: $primary_color;
+                    font-size: 12px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+        .small-doctors{
+            display: block;
+        }
+    }
+    .testimonials{
+        padding: 20px 80px 10px 80px;
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .desc-paragraph{
+            padding: 0px;
+            font-size: 12px;
+        }
+        h1{
+            font-size: 20px;
+            margin-top: 10px;
+            i{
+                font-size: 20px;
+            }
+        }
+        
+        p{
+            font-size: 12px;
+        }
+        .doc-name{
+            color: $secondary_color;
+        }
+        h6{
+            font-size: 12px;
+            color: $primary_color;
+        }
+    }
+
+    .contact-us{
+        height: 570px;
+        h6{
+            font-size: 14px;
+        }
+        h3{
+            font-size: 26px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .statistics{
+            display: none;
+        }
+    }
+
+    .pricing{
+        padding: 40px 30px;
+        .desc-paragraph{
+            letter-spacing: 1px;
+            padding: 15px 5px;
+            font-size: 12px;
+        }
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .plan-card{
+            margin-top: 10px;
+            position: relative;
+            padding: 15px 10px;
+            h4{
+                font-size: 16px;
+            }
+            h3{
+                font-size: 25px;
+                span{
+                    font-size: 10px;
+                }
+            }
+            ul{
+                li{
+                    margin: 15px auto;
+                    font-size: 14px;
+                }
+            }
+            .get-offer{
+                position: absolute;
+                top: 270px;
+                left: 30%;
+                margin: auto;
+                color: #FFF;
+                padding: 7px 5px;
+                border-radius: 50px;
+                font-size: 12px;
+                width: 40%;
+            }
+        }
+    }
+    .blog{
+        padding: 0px;
+        .desc-paragraph{
+            letter-spacing: 1px;
+            padding: 15px 5px;
+            font-size: 12px;
+        }
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+    }
+    .footer{
+        h4{
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        ul{
+            li{
+                font-size: 13px;
+            }
+        }
+        padding-top: 30px;
+        .social-ico{
+            li{
+                a{
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 377px) and (max-width: 420px){
+    header{
+        .upper-nav{
+            img{
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 10px;
+            }
+            span{
+                font-size: 12px;
+            }
+        }
+      .special-btn{
+        padding: 5px 15px;
+        font-size: 14px;
+        border-radius: 20px;
+        color: #FFF;
+        }
+        .hero-box{
+            margin-top: 150px;
+            h1{
+            color: $primary_color;
+            font-size: 40px;
+            font-weight: bolder;
+            }
+            span{
+                color: black;
+                font-size: 25px;
+                font-weight: bolder;
+            }
+            h4{
+                font-size: 15px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .features{
+        margin-top: -50px;
+        p{
+            color:#FFFFFF;
+            letter-spacing: 2px;
+        }
+        .card{
+            padding: 20px;
+            border-radius: 0px;
+            border: none;
+            
+        }
+        .od-section{
+            h4{
+                font-size: 18px;
+            }
+            p{
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
+        }
+        .ev-section{
+            h4{
+                font-size: 18px;
+            }
+            p{
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
+        }
+        h2{
+            i{
+                font-size: 45px;
+                color: $primary_color;
+            }
+        }
+        h4{
+            color: $primary_color;
+        }
+    }
+    .about-us{
+        text-align: center;
+        .doc-image{
+            display: none;
+        }
+        .doc-desc{
+            h6{
+            margin-bottom: 15px;
+            font-size: 11px;
+            }
+            h3{
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 10px;
+                line-height: 15px;
+            }
+            .feature-list{
+                i{
+                    margin: 0px;
+                }
+                h5{
+                    margin-top: 20px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .consultation{
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 13px;
+            margin-bottom: 0px;
+        }
+        .special-btn-cols{
+            text-align: center;
+        }
+        .special-btn{
+            padding: 7px 14px;
+            font-size: 13px;
+        }
+    }
+
+    .departments{
+        h5{
+            font-size: 14px;
+        }
+        h3{
+            font-size: 22px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .desc-paragraph{
+            padding: 0px;
+        }
+        .tabs{
+            ul{
+                li{
+                    button{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .doc-desc{
+            text-align: center;
+            padding: 0px;
+            h3{
+                margin-bottom: 15px;
+            }
+            p{
+                text-align: left;
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .feature-list{
+                i{
+                    margin: 5px;
+                    font-size: 25px;
+                    padding: 10px;
+                }
+                h5{
+                    margin-top: 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+        .doc-image{
+                display: none;
+        }
+    }
+
+
+    .doctors{
+        padding: 0px;
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .desc-paragraph{
+            font-size: 12px;
+            padding: 0px;
+        }
+        .large-doctors{
+            display: none;
+        }
+        .small-doctors{
+            .doc-sm-desc{
+                text-align: left;
+                h5{
+                    font-size: 12px;
+                    color: $secondary_color;
+                }
+                h6{
+                    color: $primary_color;
+                    font-size: 12px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+        .small-doctors{
+            display: block;
+        }
+    }
+    .testimonials{
+        padding: 20px 80px 10px 80px;
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .desc-paragraph{
+            padding: 0px;
+            font-size: 12px;
+        }
+        h1{
+            font-size: 20px;
+            margin-top: 10px;
+            i{
+                font-size: 20px;
+            }
+        }
+        
+        p{
+            font-size: 12px;
+        }
+        .doc-name{
+            color: $secondary_color;
+        }
+        h6{
+            font-size: 12px;
+            color: $primary_color;
+        }
+    }
+
+    .contact-us{
+        height: 570px;
+        h6{
+            font-size: 14px;
+        }
+        h3{
+            font-size: 26px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .statistics{
+            display: none;
+        }
+    }
+
+    .pricing{
+        padding: 40px 30px;
+        .desc-paragraph{
+            letter-spacing: 1px;
+            padding: 15px 5px;
+            font-size: 12px;
+        }
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .plan-card{
+            margin-top: 10px;
+            position: relative;
+            padding: 15px 10px;
+            h4{
+                font-size: 16px;
+            }
+            h3{
+                font-size: 25px;
+                span{
+                    font-size: 10px;
+                }
+            }
+            ul{
+                li{
+                    margin: 15px auto;
+                    font-size: 14px;
+                }
+            }
+            .get-offer{
+                position: absolute;
+                top: 270px;
+                left: 30%;
+                margin: auto;
+                color: #FFF;
+                padding: 7px 5px;
+                border-radius: 50px;
+                font-size: 12px;
+                width: 40%;
+            }
+        }
+    }
+    .blog{
+        padding: 0px;
+        .desc-paragraph{
+            letter-spacing: 1px;
+            padding: 15px 5px;
+            font-size: 12px;
+        }
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+    }
+    .footer{
+        h4{
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        ul{
+            li{
+                font-size: 13px;
+            }
+        }
+        padding-top: 30px;
+        .social-ico{
+            li{
+                a{
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 421px) and (max-width: 768px){
+    header{
+        .upper-nav{
+            p{
+                font-size: 12px;
+            }
+            span{
+                font-size: 14px;
+            }
+        }
+      .special-btn{
+        padding: 8px 18px;
+        font-size: 16px;
+        border-radius: 20px;
+        color: #FFF;
+        }
+        .hero-box{
+            margin-top: 150px;
+            h1{
+            color: $primary_color;
+            font-size: 50px;
+            font-weight: bolder;
+            }
+            span{
+                color: black;
+                font-size: 35px;
+                font-weight: bolder;
+            }
+            h4{
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .features{
+        margin-top: -50px;
+        p{
+            color:#FFFFFF;
+            letter-spacing: 2px;
+        }
+        .card{
+            padding: 20px;
+            border-radius: 0px;
+            border: none;
+            
+        }
+        .od-section{
+            h4{
+                font-size: 18px;
+            }
+            p{
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
+        }
+        .ev-section{
+            h4{
+                font-size: 18px;
+            }
+            p{
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
+        }
+        h2{
+            i{
+                font-size: 45px;
+                color: $primary_color;
+            }
+        }
+        h4{
+            color: $primary_color;
+        }
+    }
+    .about-us{
+        text-align: center;
+        .doc-image{
+            padding-top: 30px;
+        }
+        .doc-desc{
+            padding: 30px;
+            h6{
+            margin-bottom: 15px;
+            font-size: 11px;
+            }
+            h3{
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 12px;
+                line-height: 15px;
+            }
+            .feature-list{
+                i{
+                    margin: 0px;
+                }
+                h5{
+                    margin-top: 5px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .consultation{
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 13px;
+            margin-bottom: 0px;
+        }
+        .special-btn-cols{
+            text-align: center;
+        }
+        .special-btn{
+            padding: 7px 14px;
+            font-size: 13px;
+        }
+    }
+
+    .departments{
+        h5{
+            font-size: 14px;
+        }
+        h3{
+            font-size: 22px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .desc-paragraph{
+            padding: 0px;
+        }
+        .tabs{
+            ul{
+                li{
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .doc-desc{
+            
+            padding: 0px;
+            h3{
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            p{
+                text-align: left;
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .feature-list{
+                i{
+                    margin: 5px;
+                    font-size: 25px;
+                    padding: 10px;
+                }
+                h5{
+                    margin-top: 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+
+    .doctors{
+        padding: 0px;
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .desc-paragraph{
+            font-size: 12px;
+            padding: 0px;
+        }
+        .large-doctors{
+            display: flex;
+        }
+        .small-doctors{
+            .doc-sm-desc{
+                text-align: left;
+                h5{
+                    font-size: 12px;
+                    color: $secondary_color;
+                }
+                h6{
+                    color: $primary_color;
+                    font-size: 12px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+        .small-doctors{
+            display: none;
+        }
+    }
+    .testimonials{
+        padding: 20px 80px 10px 80px;
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .desc-paragraph{
+            padding: 0px;
+            font-size: 12px;
+        }
+        h1{
+            font-size: 20px;
+            margin-top: 10px;
+            i{
+                font-size: 20px;
+            }
+        }
+        
+        p{
+            font-size: 12px;
+        }
+        .doc-name{
+            color: $secondary_color;
+        }
+        h6{
+            font-size: 12px;
+            color: $primary_color;
+        }
+    }
+
+    .contact-us{
+        height: 570px;
+        h6{
+            font-size: 14px;
+        }
+        h3{
+            font-size: 26px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .statistics{
+            display: flex;
+        }
+        .facts-card{
+            border: none;
+            background-color: #F7F7F7;
+            padding: 25px;
+            margin: 12px;
+            .counter{
+                font-weight: bold;
+                color: $secondary_color;
+                font-size: 18px;
+            }
+            h5{
+                font-size: 12px;
+            }
+        }
+    }
+
+    .pricing{
+        padding: 40px 30px;
+        .desc-paragraph{
+            letter-spacing: 1px;
+            padding: 15px 5px;
+            font-size: 12px;
+        }
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .plan-card{
+            margin-top: 10px;
+            position: relative;
+            padding: 15px 10px;
+            h4{
+                font-size: 16px;
+            }
+            h3{
+                font-size: 25px;
+                span{
+                    font-size: 10px;
+                }
+            }
+            ul{
+                li{
+                    margin: 15px auto;
+                    font-size: 14px;
+                }
+            }
+            .get-offer{
+                position: absolute;
+                top: 270px;
+                left: 30%;
+                margin: auto;
+                color: #FFF;
+                padding: 7px 5px;
+                border-radius: 50px;
+                font-size: 12px;
+                width: 40%;
+            }
+        }
+    }
+    .blog{
+        padding: 0px;
+        .desc-paragraph{
+            letter-spacing: 1px;
+            padding: 15px 5px;
+            font-size: 12px;
+        }
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+    }
+    .footer{
+        h4{
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        ul{
+            li{
+                font-size: 13px;
+            }
+        }
+        padding-top: 30px;
+        .social-ico{
+            li{
+                a{
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width: 769px) and (max-width: 990px){
+    header{
+        .upper-nav{
+            img{
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 12px;
+            }
+            span{
+                font-size: 14px;
+            }
+        }
+      .special-btn{
+        padding: 8px 18px;
+        font-size: 16px;
+        border-radius: 20px;
+        color: #FFF;
+        }
+        .hero-box{
+            margin-top: 150px;
+            h1{
+            color: $primary_color;
+            font-size: 50px;
+            font-weight: bolder;
+            }
+            span{
+                color: black;
+                font-size: 35px;
+                font-weight: bolder;
+            }
+            h4{
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .features{
+        margin-top: -50px;
+        p{
+            color:#FFFFFF;
+            letter-spacing: 2px;
+        }
+        .card{
+            padding: 20px;
+            border-radius: 0px;
+            border: none;
+            
+        }
+        .od-section{
+            h4{
+                font-size: 18px;
+            }
+            p{
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
+        }
+        .ev-section{
+            h4{
+                font-size: 18px;
+            }
+            p{
+                font-size: 12px;
+                letter-spacing: 0px;
+            }
+        }
+        h2{
+            i{
+                font-size: 45px;
+                color: $primary_color;
+            }
+        }
+        h4{
+            color: $primary_color;
+        }
+    }
+    .about-us{
+        text-align: center;
+        .doc-image{
+            padding-top: 30px;
+        }
+        .doc-desc{
+            padding: 30px;
+            h6{
+            margin-bottom: 15px;
+            font-size: 11px;
+            }
+            h3{
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 12px;
+                line-height: 15px;
+            }
+            .feature-list{
+                i{
+                    margin: 0px;
+                }
+                h5{
+                    margin-top: 5px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .consultation{
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 13px;
+            margin-bottom: 0px;
+        }
+        .special-btn-cols{
+            text-align: center;
+        }
+        .special-btn{
+            padding: 7px 14px;
+            font-size: 13px;
+        }
+    }
+
+    .departments{
+        h5{
+            font-size: 14px;
+        }
+        h3{
+            font-size: 22px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 18px;
+        }
+        .desc-paragraph{
+            padding: 0px;
+        }
+        .tabs{
+            ul{
+                li{
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .doc-desc{
+            
+            padding: 0px;
+            h3{
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            p{
+                text-align: left;
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .feature-list{
+                i{
+                    margin: 5px;
+                    font-size: 25px;
+                    padding: 10px;
+                }
+                h5{
+                    margin-top: 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+
+    .doctors{
+        padding: 0px;
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .desc-paragraph{
+            font-size: 12px;
+            padding: 0px;
+        }
+        .large-doctors{
+            display: flex;
+        }
+        .small-doctors{
+            .doc-sm-desc{
+                text-align: left;
+                h5{
+                    font-size: 12px;
+                    color: $secondary_color;
+                }
+                h6{
+                    color: $primary_color;
+                    font-size: 12px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+        .small-doctors{
+            display: none;
+        }
+    }
+    .testimonials{
+        padding: 20px 80px 10px 80px;
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .desc-paragraph{
+            padding: 0px;
+            font-size: 12px;
+        }
+        h1{
+            font-size: 20px;
+            margin-top: 10px;
+            i{
+                font-size: 20px;
+            }
+        }
+        
+        p{
+            font-size: 12px;
+        }
+        .doc-name{
+            color: $secondary_color;
+        }
+        h6{
+            font-size: 12px;
+            color: $primary_color;
+        }
+    }
+
+    .contact-us{
+        height: 570px;
+        h6{
+            font-size: 14px;
+        }
+        h3{
+            font-size: 26px;
+        }
+        p{
+            font-size: 14px;
+        }
+        .statistics{
+            display: flex;
+        }
+        .facts-card{
+            border: none;
+            background-color: #F7F7F7;
+            padding: 25px;
+            margin: 12px;
+            .counter{
+                font-weight: bold;
+                color: $secondary_color;
+                font-size: 18px;
+            }
+            h5{
+                font-size: 12px;
+            }
+        }
+    }
+    .pricing{
+        padding: 40px 30px;
+        .desc-paragraph{
+            letter-spacing: 1px;
+            padding: 15px 5px;
+            font-size: 12px;
+        }
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+        .plan-card{
+            margin-top: 10px;
+            position: relative;
+            padding: 15px 10px;
+            h4{
+                font-size: 16px;
+            }
+            h3{
+                font-size: 25px;
+                span{
+                    font-size: 10px;
+                }
+            }
+            ul{
+                li{
+                    margin: 15px auto;
+                    font-size: 14px;
+                }
+            }
+            .get-offer{
+                position: absolute;
+                top: 270px;
+                left: 30%;
+                margin: auto;
+                color: #FFF;
+                padding: 7px 5px;
+                border-radius: 50px;
+                font-size: 12px;
+                width: 40%;
+            }
+        }
+    }
+    .blog{
+        padding: 0px;
+        .desc-paragraph{
+            letter-spacing: 1px;
+            padding: 15px 5px;
+            font-size: 12px;
+        }
+        h5{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 24px;
+        }
+    }
+    .footer{
+        h4{
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        ul{
+            li{
+                font-size: 13px;
+            }
+        }
+        padding-top: 30px;
+        .social-ico{
+            li{
+                a{
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 991px){
+    .doctors{
+        .card{
+            .social-links{
+                display: none !important;
+            }
+        }
+    }
+}
