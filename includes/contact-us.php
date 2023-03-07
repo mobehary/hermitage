@@ -70,7 +70,7 @@
                         </div>
                     </div>
                     <div class="col-12 text-center">
-                        <h5 class="text-uppercase font-weight-bold a-h">ABOUT Hermitace FACTS</h5>
+                        <h5 class="text-uppercase font-weight-bold a-h">ABOUT hermitage FACTS</h5>
                     </div>
                 </div>
             </div>

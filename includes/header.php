@@ -28,7 +28,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 col-md-3 col-lg-3">
-                            <a href="index.html"><img class="wow slideInDown" data-wow-duration="0.5s" data-wow-delay="0s" src="image/logo.png" alt="Hermitace" height="70px" width="70px"></a>
+                            <a href="index.html"><img class="wow slideInDown" data-wow-duration="0.5s" data-wow-delay="0s" src="image/logo.png" alt="hermitage" height="70px" width="70px"></a>
                         </div>
                         <div class="col-sm-6 col-md-3 col-lg-3">
                             <p class="wow slideInDown" data-wow-duration="0.5s" data-wow-delay="0s"><i class="fa fa-home"></i><span> Address : </span>198 West 21th Street, Suite 721 New York

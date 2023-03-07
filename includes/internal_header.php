@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css"/>
     <link rel="icon" type="image/png" href="image/logo.png">
-    <title>Hermitace | About Us</title>
+    <title>hermitage | About Us</title>
     <link rel="" href="">
 </head>
 
@@ -26,7 +26,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-4 col-lg-3">
-                    <a href="index.html"><img class="wow slideInDown" data-wow-duration="0.5s" data-wow-delay="0s" src="image/logo.png" alt="Hermitace" height="70px" width="70px"></a>
+                    <a href="index.html"><img class="wow slideInDown" data-wow-duration="0.5s" data-wow-delay="0s" src="image/logo.png" alt="hermitage" height="70px" width="70px"></a>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3">
                         <p class="wow slideInDown" data-wow-duration="0.5s" data-wow-delay="0s"><i class="fa fa-home"></i><span> Address : </span>198 West 21th Street, Suite 721 New York

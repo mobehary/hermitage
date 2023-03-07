@@ -928,7 +928,7 @@ header .special-btn:visited {
 
 .contact-box {
   background-color: #efefef;
-  height: 120px;
+  height: 100px;
 }
 
 .contact-box span {
@@ -938,7 +938,7 @@ header .special-btn:visited {
 }
 
 .contact-box p {
-  font-size: 13px;
+  font-size: 15px;
   color: #666;
 }
 
@@ -1055,7 +1055,7 @@ header .special-btn:visited {
 }
 
 .footer .submit-form button {
-  border-radius: 0px;
+  border-radius: 35px;
   outline-style: none;
   background-color: #4DBBAB;
   border: 1px solid #4DBBAB;
@@ -1064,6 +1064,20 @@ header .special-btn:visited {
 .footer .submit-form button:hover {
   background-color: #043361;
   border: 1px solid #043361;
+}
+
+.contact-btn{
+  border-radius: 35px;
+  outline-style: none;
+  background-color: #4DBBAB;
+  border: 1px solid #4DBBAB;
+  color: #fff;
+}
+
+.contact-btn:hover {
+  background-color: #043361;
+  border: 1px solid #043361;
+  color: #fff;
 }
 
 .login {

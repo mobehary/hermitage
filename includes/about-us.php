@@ -5,7 +5,7 @@
                 <img src="image/doctor.png" width="100%" height="auto" alt="about us">
             </div>
             <div class="col-sm-12 col-md-8 col-lg-7 doc-desc wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                <h6 class="text-uppercase">about Hermitace</h6>
+                <h6 class="text-uppercase">about hermitage</h6>
                 <h3 class="text-capitalize font-weight-bolder">Medical specialty concerned with the care of acutely
                     ill hospitalized patients</h3>
                 <p> On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
